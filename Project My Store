@@ -1,0 +1,23 @@
+CREATE TABLE Bodega (ID INTEGER PRIMARY KEY, name TEXT, description TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO Bodega VALUES (1, "Coke", "Sodapop", 12, 3);
+INSERT INTO Bodega VALUES (2, "Snickers", "Hunger Buster", 3, 1);
+INSERT INTO  Bodega VALUES (3, "Bubble Gum", "Chewing Stick", 40, .50);
+INSERT INTO Bodega VALUES  (4, "Tee Shirt", "Clothing", 10, 5);
+INSERT INTO Bodega VALUES (5, "Drum Stick", "Ice Cream", 20, 2);
+INSERT INTO Bodega VALUES (6, "Scratch Off", "Lottery", 100, 5);
+INSERT INTO Bodega VALUES (7, "Green Tree", "Air Freshener", 18, 3);
+INSERT INTO Bodega VALUES (8, "Beaver Nuggets", "Bucees Crunchy Treats", 6, 2);
+INSERT INTO Bodega VALUES (9, " HOT CHIPS", "NACHO CHIPS", 12, 1);
+INSERT INTO Bodega VALUES (10, "BALL PARK", "HOT DOG", 19, 2);
+INSERT INTO Bodega VALUES (11, "SPRITE", "LEMON LIME SODA", 11, 3);
+INSERT INTO Bodega VALUES (12, "HERSEY", "CHOCOLATE BAR", 10, 4);
+INSERT INTO Bodega VALUES (13, "TOPOCHICO", "HARD SELZTER", 24, 3);
+INSERT INTO Bodega VALUES (14, "SOLO", "RED CUPS", 12, 1);
+INSERT INTO Bodega VALUES (15, "PUCK", "PING PONG BALL", 12, 1);
+
+SELECT * FROM Bodega ORDER BY price;
+displayed items by price 
+
+SELECT SUM(quantity) FROM Bodega;
+displayed total aount for all items 
